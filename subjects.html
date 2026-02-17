@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects - EduMaster</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<style>
+body{
+background: linear-gradient(135deg,#4f46e5,#9333ea,#ec4899);
+}
+</style>
+
+</head>
+
+<body class="text-white">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center p-4 bg-white/10 backdrop-blur-lg">
+<h1 class="font-bold text-xl">📚 EduMaster</h1>
+<a href="index.html"
+class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm">
+Back Home
+</a>
+</nav>
+
+<!-- HEADER -->
+<section class="text-center py-12">
+<h2 class="text-4xl font-bold mb-4 reveal">
+📘 All Subjects & Topics
+</h2>
+<p class="text-lg reveal">
+Explore our complete academic curriculum
+</p>
+</section>
+
+<!-- SUBJECT GRID -->
+<section class="px-6 pb-16">
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- PHYSICS -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl reveal">
+<h3 class="text-xl font-bold mb-3">Physics</h3>
+<ul class="text-sm space-y-1">
+<li>Wave Motion</li>
+<li>Optics</li>
+<li>Magnetism</li>
+<li>AC Theory</li>
+<li>Rigid Motion</li>
+<li>Introduction to Physics</li>
+<li>Flotation</li>
+<li>Motion</li>
+<li>Simple Harmonic Motion</li>
+<li>Nuclear Physics</li>
+<li>Atomic Physics</li>
+</ul>
+</div>
+
+<!-- CHEMISTRY -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl reveal">
+<h3 class="text-xl font-bold mb-3">Chemistry</h3>
+<ul class="text-sm space-y-1">
+<li>Introduction to Chemistry</li>
+<li>The Concept of the Mole</li>
+<li>Mole Ratios</li>
+<li>Kinetic Theory</li>
+<li>Periodic Properties</li>
+<li>Inter Atomic Bonding</li>
+<li>Intermolecular Bonding</li>
+</ul>
+</div>
+
+<!-- BIOLOGY -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl reveal">
+<h3 class="text-xl font-bold mb-3">Biology</h3>
+<ul class="text-sm space-y-1">
+<li>Introduction to Biology</li>
+<li>The Scientific Method</li>
+<li>Fish Farming, Process & Conservation</li>
+<li>Cell Biology</li>
+<li>Organisms</li>
+<li>Ecology</li>
+<li>Diseases and Infections</li>
+<li>Mammalian System</li>
+<li>Plant System</li>
+</ul>
+</div>
+
+<!-- MATHEMATICS -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl reveal">
+<h3 class="text-xl font-bold mb-3">Mathematics</h3>
+<ul class="text-sm space-y-1">
+<li>Surds</li>
+<li>Linear Equations</li>
+<li>Relation and Functions</li>
+<li>Coordinate Geometry 1 & 2</li>
+<li>Number Bases</li>
+<li>Percentages</li>
+<li>Decimal Point</li>
+</ul>
+</div>
+
+<!-- ADDITIONAL MATHS -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-3xl shadow-xl reveal">
+<h3 class="text-xl font-bold mb-3">Additional Maths</h3>
+<ul class="text-sm space-y-1">
+<li>Surds</li>
+<li>Indices</li>
+<li>Logarithms</li>
+<li>Sequence and Series</li>
+<li>Matrices</li>
+<li>Straight Lines</li>
+<li>Vectors</li>
+<li>Limit and Differentiation</li>
+<li>Statistics</li>
+<li>Probability</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+// Scroll animations
+ScrollReveal().reveal('.reveal',{
+delay:200,
+distance:'40px',
+origin:'bottom',
+interval:150
+});
+
+// Header animation
+gsap.from("h2",{
+opacity:0,
+y:-40,
+duration:1
+});
+
+</script>
+
+</body>
+</html>
+<button onclick="openSubjects()">
+<a href="subjects.html"
+class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition">
+Start Learning
+</a>
